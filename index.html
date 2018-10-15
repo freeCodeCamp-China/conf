@@ -50,13 +50,13 @@
     .table_box,.timeline{margin-top: 0;width:100%;overflow-x:auto;margin-bottom:0;}
     .table_box a{color:#1890ff;font-weight:400;font-size:14px;display: block;margin-top:20px;}
     .timeline{height:35px;-webkit-overflow-scrolling:touch;}
-    .timeline:after{content: '';display:block;background:#e6e6e6;position:relative;top:8px;height:2px;}
+    .timeline .active{border-color:#029950;}
+    .timeline div{min-width:910px;position:relative;}
+    .timeline > div:after{content:'';width:100%;display:block;background:#e6e6e6;position:absolute;bottom:-10px;height:2px;}
     .timeline span{cursor:pointer;font-size:15px;padding:5px 20px 10px;position:relative;z-index:3;border-bottom:2px solid transparent;}
     .lg_wraped{-webkit-flex-wrap: wrap;-webkit-justify-content: normal;}
     .lg_wraped .media{margin-top: 40px;}
     .lg_wraped .media img{border-radius: 50%;width: 140px;box-shadow:0 0 8px rgba(0, 0, 0, 0.15)}
-    .timeline .active{border-color:#029950;}
-    .timeline div{min-width:910px;}
     table{text-align:left;animation: table_move 0.3s ease-in forwards;-webkit-overflow-scrolling:touch;}
     @-webkit-keyframes table_move{
       0%{opacity: 0.55;}
@@ -529,7 +529,7 @@
         <a target="_blank" href="http://www.easemob.com/">
           <img src="./assets/logo/huanxin.png">
         </a>
-        <a target="_blank" href="">
+        <a target="_blank" href="javascript:;">
           <img src="./assets/logo/quancheng.png">
         </a>
       </div>
