@@ -29,7 +29,8 @@
     nav li{float: left;font-size: 15px;padding:0 10px;}
     nav a{color:#f7f7f7}
     nav .current a{color:#ffac33;}
-    .nav_bar{float: right;}
+    .nav_bar,.nav_toggle{float: right;}
+    .nav_toggle{display: none;width:30px;padding-top:10px;height:40px;}
     img{width: 100%;}
     p{margin: 0;}
     h2{margin: 0;font-size: 24px;padding:70px 0 34px;text-align:center;}
@@ -66,17 +67,18 @@
     td{padding: 10px 20px 10px 0;}
     .host_item{text-align: center;width:80%;margin: 0 auto;}
     .partner_item{width: 45%;text-align: center;}
-    .partner_item img{width:150px;}
+    .partner_item img{width:130px;}
     .host_item img{width: 220px;}
-    .sponsor .sponsor_item img{width:54%;}
+    .sponsor_item img{width:54%;}
     .ml28{margin-left: 28%;}
     .sponsor .flex_box{-webkit-justify-content:space-around;}
     .sponsor .sponsor_item{width:20%;text-align:center;font-size:18px;}
-    .sponsor_item img{margin-top: 15px;}
+    .sponsor_item img{margin-top: 15px;padding-bottom:30px;}
     .partner_item p,.host_item p{margin-top: 30px;line-height:1.6rem;}
     .host_item p,.abstract p{text-align:left;}
     .progress{-webkit-align-items: center;-webkit-flex-wrap: wrap}
-    .progress a{display: block;width: 20%;padding:0 15px;box-sizing: border-box}
+    .progress a{display: block;width: 20%;padding:0 15px;box-sizing:border-box;}
+    .progress img{max-width:90%;padding-bottom:30px;}
     .progress.flex_box{-webkit-justify-content: flex-start}
     /* .faq ul{list-style:none;padding-left: 0;}
     .faq li{margin:25px 0;line-height:1.6rem;}
@@ -86,7 +88,13 @@
     @media screen and (max-width:620px){
       h2{padding-top:34px;}
       .ml28{margin-left: 0;}
-      .nav_bar{display: none;}
+      nav,nav>ul{overflow: initial!important;}
+      nav{padding: 0 10px;}
+      .head_logo img{width: 180px;}
+      .nav_bar{display: none;z-index:3;background:rgba(0, 0, 0, 0.8);position: absolute;top: 50px;right: 0;}
+      .nav_bar ul{height: auto;}
+      .nav_bar li{float: none;}
+      .nav_toggle{display: block;}
       td{padding-top: 5px;padding-bottom: 5px;}
       .container{padding:0 10px;}
       .abstract p{width: auto;}
@@ -104,9 +112,8 @@
       .partner_item p{margin-top: 15px;}
       .sm_flex_warped{-webkit-flex-wrap:wrap}
       .sponsor .sponsor_item{width: 50%;}
-      .sponsor_item img{width:80%;padding-bottom:30px;}
+      .sponsor_item img{width:60%;}
       .progress a{width:50%;text-align:center;}
-      .progress img{width: 90%;padding-bottom:30px;}
     }
   </style>
 </head>
@@ -128,6 +135,9 @@
           <li><a href="#section_7">日程与报名</a></li>
           <li><a href="#section_8">组织机构</a></li>
         </ul>
+      </li>
+      <li class="nav_toggle">
+        <img src="./assets/toggle_holder.png">
       </li>
     </ul>
   </nav>
@@ -509,8 +519,8 @@
       <div class="flex_box sm_flex_warped">
         <div class="sponsor_item">
           <p>银牌赞助商</p>
-          <a target="_blank" href="javascript:;">
-            <img src="./assets/logo/naohailian.jpeg">
+          <a target="_blank" href="http://www.knowhowchain.com">
+            <img src="./assets/logo/naohailian.png">
           </a>
         </div>
         <div class="sponsor_item">
@@ -580,7 +590,7 @@
   <script src="./assets/js/nav.min.js"></script>
   <script>
   var c=$(window).height();$(window,document).scroll(function(){var o=$(this).scrollTop();$(".container").each(function(){var t=$(this).offset().top;t-o<=c&&$(this).addClass("animated")})});$(function(){$('.timeline span').click(function(){var i=$(this).index();$('.timeline span').removeClass('active');$(this).addClass('active');$('.table_box').hide();$('.table_box').eq(i).show()})})
-  $(function(){$('#nav').onePageNav();});
+  $(function(){$('#nav').onePageNav();$('.nav_toggle').click(function(){$('.nav_bar').fadeToggle()})});
   </script>
 </body>
 </html>
