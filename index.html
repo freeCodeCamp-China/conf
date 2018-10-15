@@ -66,15 +66,17 @@
     td{padding: 10px 20px 10px 0;}
     .host_item{text-align: center;width:80%;margin: 0 auto;}
     .partner_item{width: 45%;text-align: center;}
-    .partner_item img,.host_item img{width:240px;}
+    .partner_item img,.host_item img{width:150px;}
+    .sponsor .sponsor_item img{width:54%;}
     .ml28{margin-left: 28%;}
     .sponsor .flex_box{-webkit-justify-content:space-around;}
     .sponsor .sponsor_item{width:20%;text-align:center;font-size:18px;}
     .sponsor_item img{margin-top: 15px;}
     .partner_item p,.host_item p{margin-top: 30px;line-height:1.6rem;}
     .host_item p,.abstract p{text-align:left;}
-    .progress{-webkit-align-items: center}
-    .progress a{display: block;width: 20%;}
+    .progress{-webkit-align-items: center;-webkit-flex-wrap: wrap}
+    .progress a{display: block;width: 20%;padding:0 15px;box-sizing: border-box}
+    .progress.flex_box{-webkit-justify-content: flex-start}
     /* .faq ul{list-style:none;padding-left: 0;}
     .faq li{margin:25px 0;line-height:1.6rem;}
     .faq li span{display: block;margin-bottom: 5px;}
@@ -96,7 +98,7 @@
       .host_item{width: 100%;}
       .lg_wraped .media img{width: 100px;}
       .partner_item,.revImg{width:100%;}
-      .partner_item img{width:55%;}
+      .partner_item img{width:40%;}
       /* .partner_item+.partner_item{margin-top:20px;} */
       .partner_item p{margin-top: 15px;}
       .sm_flex_warped{-webkit-flex-wrap:wrap}
@@ -521,24 +523,24 @@
 
     <div class="container sponsor">
       <h2>合作伙伴 (持续更新)</h2>
-      <div class="flex_box flex_warped progress">
+      <div class="flex_box flex_wraped progress">
         <a href="https://m.ke.qq.com/index.html?_bid=167&_wv=4097#from=other" target="_blank">
-          <img src="">
+          <img src="./assets/logo/tecent_ke.png">
         </a>
         <a href="https://www.getui.com/cn/index.html" target="_blank">
-          <img src="">
+          <img src="./assets/logo/getui.png">
         </a>
         <a href="https://segmentfault.com" target="_blank">
           <img src="./assets/logo/sf.png">
         </a>
-        <a href="https://www.oschina.net" target="_blank">
-          <img src="./assets/logo/osc.jpg">
-        </a>
         <a href="http://www.easemob.com/" target="_blank">
           <img src="./assets/logo/huanxin.png">
         </a>
+        <a href="https://www.oschina.net" target="_blank">
+          <img src="./assets/logo/osc.jpg">
+        </a>
         <a href="https://www.apicloud.com/m" target="_blank">
-          <img src="">
+          <img src="./assets/logo/apicloud.png">
         </a>
         <a href="http://www.techfantasy.com.cn/" target="_blank">
           <img src="./assets/logo/techfantacy.png">
