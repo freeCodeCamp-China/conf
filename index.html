@@ -46,6 +46,7 @@
     .media img{width:80px;}
     .media p{margin-top: 15px;}
     .table_box,.timeline{margin-top: 0;width:100%;overflow-x:auto;margin-bottom:0;}
+    .table_box a{color:#1890ff;font-weight:400;font-size:14px;display: block;margin-top:20px;}
     .timeline{height:35px;-webkit-overflow-scrolling:touch;}
     .timeline:after{content: '';display:block;background:#e6e6e6;position:relative;top:8px;height:2px;}
     .timeline span{cursor:pointer;font-size:15px;padding:5px 20px 10px;position:relative;z-index:3;border-bottom:2px solid transparent;}
@@ -314,9 +315,9 @@
           <span>西安</span>
         </div>
       </h4>
-      <div class="table_box">
-        <a target="_blank" style="margin-top: 20px; display: block;" href="">报名通道即将开启</a>
-        <table data-city="成都">
+      <div class="table_box" data-city="成都">
+        <a target="_blank" href="https://web-conf.tk/2018/">点此报名</a>
+        <table>
           <thead>
             <tr>
               <th>时间</th>
@@ -383,7 +384,10 @@
             </tr>
           </tbody>
         </table>
-        <table data-city="深圳">
+      </div>
+      <div class="table_box" data-city="深圳">
+        <a href="javascript:;">报名通道即将开启</a>
+        <table>
           <thead>
             <!-- <tr>
               <th>时间</th>
@@ -402,6 +406,46 @@
             </tr> -->
           </tbody>
         </table>
+      </div>
+      <div class="table_box" data-city="上海">
+        <a href="javascript:;">报名通道即将开启</a>
+        <table></table>
+      </div>
+      <div class="table_box" data-city="北京">
+        <a href="javascript:;">报名通道即将开启</a>
+        <table></table>
+      </div>
+      <div class="table_box" data-city="武汉">
+        <a href="javascript:;">报名通道即将开启</a>
+        <table></table>
+      </div>
+      <div class="table_box" data-city="杭州">
+        <a href="javascript:;">报名通道即将开启</a>
+        <table></table>
+      </div>
+      <div class="table_box" data-city="广州">
+        <a href="javascript:;">报名通道即将开启</a>
+        <table></table>
+      </div>
+      <div class="table_box" data-city="重庆">
+        <a href="javascript:;">报名通道即将开启</a>
+        <table></table>
+      </div>
+      <div class="table_box" data-city="郑州">
+        <a href="javascript:;">报名通道即将开启</a>
+        <table></table>
+      </div>
+      <div class="table_box" data-city="济南">
+        <a href="javascript:;">报名通道即将开启</a>
+        <table></table>
+      </div>
+      <div class="table_box" data-city="天津">
+        <a href="javascript:;">报名通道即将开启</a>
+        <table></table>
+      </div>
+      <div class="table_box" data-city="西安">
+        <a href="javascript:;">报名通道即将开启</a>
+        <table></table>
       </div>
     </div>
   </div>
@@ -516,7 +560,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="./assets/js/nav.min.js"></script>
   <script>
-  var c=$(window).height();$(window,document).scroll(function(){var o=$(this).scrollTop();$(".container").each(function(){var t=$(this).offset().top;t-o<=c&&$(this).addClass("animated")})});$(function(){$('.timeline span').click(function(){var i=$(this).index();$('.timeline span').removeClass('active');$(this).addClass('active');$('table').hide();$('table').eq(i).show()})})
+  var c=$(window).height();$(window,document).scroll(function(){var o=$(this).scrollTop();$(".container").each(function(){var t=$(this).offset().top;t-o<=c&&$(this).addClass("animated")})});$(function(){$('.timeline span').click(function(){var i=$(this).index();$('.timeline span').removeClass('active');$(this).addClass('active');$('.table_box').hide();$('.table_box').eq(i).show()})})
   $(function(){$('#nav').onePageNav();});
   </script>
 </body>
