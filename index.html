@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <meta name="referrer" content="always">
+  <meta name="keywords" content="freeCodeConf 大型联动技术大会 开发者社区 2018年11月10日 互联网行业技术 人才 明星企业">
+  <meta name="description" content="freeCodeConf是freeCodeCamp中国举办的每年一度大型联动技术大会，
+  旨在联合freeCodeCamp各城市本地开发者社区，促进高度垂直、高度人才集中、高度明星企业集结的互联网与软件行业技术交流。
+  第一届freeCodeConf将于2018年11月10日在全国十二个城市同期举办。">
+  <title>freeCodeConf</title>
+  <style>
+    body{margin: 0;box-sizing:border-box;color: #333;font-family: pingfang,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+    .container{max-width: 1200px;margin: 0 auto;font-size: 14px;position:relative;left:-50px;}
+    .animated{-webkit-animation:animated .5s ease-in-out forwards;}
+    @-webkit-keyframes animated{
+      0%{left:-50px;opacity:0.7;}
+      100%{left:0;opacity:1;}
+    }
+    .clearfix{overflow:auto;_height:1%}
+    a{text-decoration:none;}
+    .head_logo{display: inline-block;height: 50px;line-height: 50px;}
+    .head_logo img{width:220px;vertical-align:middle;}
+    nav{padding:0 20px;;position:sticky;position:-webkit-sticky;top:0;z-index:3;background:#029950;box-shadow:0 2px 5px rgba(0, 0, 0, 0.3);}
+    nav ul{height:50px;line-height:50px;list-style:none;margin: 0;padding: 0;}
+    nav li{float: left;font-size: 15px;padding:0 10px;}
+    nav a{color:#f7f7f7}
+    nav .current a{color:#ffac33;}
+    .nav_bar{float: right;}
+    img{width: 100%;}
+    p{margin: 0;}
+    h2{margin: 0;font-size: 24px;padding:70px 0 34px;text-align:center;}
+    .bgback img{width:100%;}
+    .abstract{background: #F5F5F5;text-align: center;padding-bottom: 60px;}
+    .abstract p{line-height: 1.6rem;width: 80%;margin: 0 auto;}
+    .review{text-align: center;}
+    .review_item+.review_item{margin-top: 40px;}
+    .revImg{width:600px;margin-bottom:30px;}
+    .situation p{margin:36px 0;}.situation p:first-child{margin-top: 0;}
+    .situation span:first-child{display: inline-block;width: 220px;}
+    .flex_box{display: -webkit-flex;-webkit-justify-content: space-between;}
+    .media{text-align: center;width: 20%;}
+    .media img{width:80px;}
+    .media p{margin-top: 15px;}
+    .table_box,.timeline{margin-top: 0;width:100%;overflow-x:auto;margin-bottom:0;}
+    .timeline{height:35px;}
+    .timeline:after{content: '';display:block;background:#e6e6e6;position:relative;top:8px;height:2px;}
+    .timeline span{cursor:pointer;font-size:15px;padding:5px 20px 10px;position:relative;z-index:3;border-bottom:2px solid transparent;}
+    .lg_wraped{-webkit-flex-wrap: wrap;-webkit-justify-content: normal;}
+    .lg_wraped .media{margin-top: 40px;}
+    .lg_wraped .media img{border-radius: 50%;width: 140px;box-shadow:0 0 8px rgba(0, 0, 0, 0.15)}
+    .timeline .active{border-color:#029950;}
+    .timeline div{min-width:880px;}
+    table{text-align:left;animation: table_move 0.3s ease-in forwards;}
+    @-webkit-keyframes table_move{
+      0%{opacity: 0.55;}
+      100%{opacity:1;}
+    }
+    th{font-weight: normal;padding:30px 10px;min-width:140px;}
+    td{padding: 10px 20px 10px 0;}
+    .host_item{text-align: center;width:80%;margin: 0 auto;}
+    .partner_item{width: 45%;text-align: center;}
+    .partner_item img,.host_item img{width:240px;}
+    .ml28{margin-left: 28%;}
+    .sponsor .flex_box{-webkit-justify-content:space-around;}
+    .sponsor .sponsor_item{width:20%;text-align:center;font-size:18px;}
+    .sponsor_item img{margin-top: 15px;}
+    .partner_item p,.host_item p{margin-top: 30px;line-height:1.6rem;}
+    .host_item p,.abstract p{text-align:left;}
+    .progress{-webkit-align-items: center}
+    .progress a{display: block;width: 20%;}
+    /* .faq ul{list-style:none;padding-left: 0;}
+    .faq li{margin:25px 0;line-height:1.6rem;}
+    .faq li span{display: block;margin-bottom: 5px;}
+    .faq li p:before{content:'- ';} */
+    footer{background:#eee;color:#777;font-size:13px;margin-top:30px;padding:20px 0;text-align:center;}
+    @media screen and (max-width:620px){
+      h2{padding-top:34px;}
+      .ml28{margin-left: 0;}
+      .nav_bar{display: none;}
+      td{padding-top: 5px;padding-bottom: 5px;}
+      .container{padding:0 10px;}
+      .abstract p{width: auto;}
+      .situation p{display:-webkit-flex;margin:15px 0;}
+      .situation span:first-child{-webkit-flex:1;}
+      .situation span:nth-child(2){-webkit-flex:2}
+      .media{width:45%;margin-top: 20px;padding: 0 5px;}
+      .media+.media{margin-top:20px;} .media h4{margin: 5px 0;}
+      .lg_wraped .media{margin-top: 0;padding:30px 5px 0;}
+      .host_item{width: 100%;}
+      .lg_wraped .media img{width: 100px;}
+      .partner_item,.revImg{width:100%;}
+      .partner_item img{width:55%;}
+      /* .partner_item+.partner_item{margin-top:20px;} */
+      .partner_item p{margin-top: 15px;}
+      .sm_flex_warped{-webkit-flex-wrap:wrap}
+      .sponsor .sponsor_item{width: 50%;}
+      .sponsor_item img{width:80%;padding-bottom:30px;}
+      .progress img{width: 45%;padding-bottom:30px;}
+    }
+  </style>
+</head>
+<body>
+  <nav class="clearfix">
+    <ul id="nav" class="clearfix">
+      <li class="head_logo">
+        <a href="https://www.freecodecamp.one">
+          <img src="./assets/freecodecamp_logo.svg">
+        </a>
+      </li>
+      <li class="nav_bar">
+        <ul>
+          <li><a href="#section_2">大会宗旨</a></li>
+          <li><a href="#section_3">往届回顾</a></li>
+          <li><a href="#section_4">大会概况</a></li>
+          <li><a href="#section_5">大会亮点</a></li>
+          <li><a href="#section_6">演讲嘉宾</a></li>
+          <li><a href="#section_7">日程与报名</a></li>
+          <li><a href="#section_8">组织机构</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="bgback" id="section_1">
+    <img src="./assets/bgback.png">
+  </div>
+  <div class="abstract" id="section_2">
+    <div class="container animated">
+      <h2>大会宗旨</h2>
+      <p>freeCodeConf是freeCodeCamp中国举办的每年一度大型联动技术大会，旨在联合freeCodeCamp各城市本地开发者社区，促进高度垂直、高度人才集中、高度明星企业集结的互联网与软件行业技术交流。第一届freeCodeConf将于2018年11月10日在全国12个城市同期举办，诚邀广大开发者共享技术盛宴。</p>
+    </div>
+  </div>
+  <div class="review" id="section_3">
+    <div class="container">
+      <h2>往届活动回顾</h2>
+      <div class="review_item">
+        <img src="./assets/review1.png" class="revImg">
+        <p>2017年11月，freeCodeCamp成都社区举办Web前端交流大会，八百余人报名，四百余人参会，获得本地政府及全国各企业、媒体、社区的广泛关注与大力支持。</p>
+      </div>
+      <div class="review_item">
+          <img src="./assets/review2.png" class="revImg">
+        <p>2018年5月，freeCodeCamp中国参与主办首届全球石墨烯开发者大会，与会一千余名开发者。目前freeCodeCamp正在开发区块链基础技术课程，并将持续致力于区块链开发者社群服务。</p>
+      </div>
+    </div>
+  </div>
+  <div class="situation" id="section_4">
+    <div class="container">
+      <h2>2018 freeCodeConf 概况</h2>
+      <div class="sumary">
+        <p>
+          <span>时间:</span>
+          <span>2018年11月10日</span>
+        </p>
+        <p>
+          <span>地点:</span>
+          <span>上海、天津、深圳、成都、西安、北京、杭州、广州、武汉、重庆、郑州、济南</span>
+        </p>
+        <p>
+            <span>会议规模:</span>
+            <span>1800+参会者</span>
+        </p>
+        <p>
+          <span>参会人员:</span>
+          <span>前端开发者、区块链开发者、CTO、架构师、相关技术从业者</span>
+        </p>
+        <p>
+          <span>主办方:</span>
+          <span>freeCodeCamp中国</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="snap" id="section_5">
+    <div class="container">
+      <h2>大会亮点</h2>
+      <div class="flex_box  sm_flex_warped">
+        <div class="media">
+          <img src="./assets/meeting.png">
+          <!-- <h4>会议</h4> -->
+          <p>12个城市社区同期举办，促进本地开发者技术分享与交流</p>
+        </div>
+        <div class="media">
+          <img src="./assets/meeting.png">
+          <!-- <h4>会议</h4> -->
+          <p>与数十位前端、区块链等领域的优秀开发者、技术负责人面对面交流</p>
+        </div>
+        <div class="media">
+          <img src="./assets/meeting.png">
+          <!-- <h4>会议</h4> -->
+          <p>部分城市设置现场招聘环节，为企业和开发者搭建沟通桥梁</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="guests" id="section_6">
+    <div class="container">
+      <h2>演讲嘉宾（持续更新）</h2>
+      <div class="flex_box  lg_wraped sm_flex_warped">
+        <div class="media">
+          <img src="./assets/speakers/guo_dafeng.jpeg">
+          <h4>郭达峰</h4>
+          <p>
+            <span>Strikingly CTO</span>
+          </p>
+        </div>
+        <div class="media">
+          <img src="./assets/speakers/quincy.jpeg">
+          <h4>Quincy Larson</h4>
+          <p>
+            <span>freeCodeCamp创始人</span>
+          </p>
+        </div>
+        <div class="media">
+          <img src="./assets/speakers/guo_linshuo.jpeg">
+          <h4>郭林烁</h4>
+          <p>
+            <span>腾讯AlloyTeam前端工程师</span>
+          </p>
+        </div>
+        <div class="media">
+          <img src="./assets/speakers/huang_yi.jpeg">
+          <h4>黄轶</h4>
+          <p>
+            <span>滴滴WebApp前端架构组负责人</span>
+          </p>
+        </div>
+        <div class="media">
+          <img src="./assets/speakers/yu_che.jpeg">
+          <h4>余澈</h4>
+          <p>
+            <span>京东凹凸实验室前端工程师</span>
+          </p>
+        </div>
+        <div class="media">
+          <img src="./assets/speakers/xiong_jie.jpeg">
+          <h4>熊节</h4>
+          <p>
+            <span>宝尊电商成都研发中心总经理</span>
+          </p>
+        </div>
+        <div class="media">
+          <img src="./assets/speakers/si_yue.png">
+          <h4>死月</h4>
+          <p>
+            <span>蚂蚁金服体验技术部研发工程师</span>
+          </p>
+        </div>
+        <div class="media">
+          <img src="./assets/speakers/yuechen.jpeg">
+          <h4>岳晨</h4>
+          <p>
+            <span>智冠信息科技开发主管</span>
+          </p>
+        </div>
+            <div class="media">
+              <img src="./assets/speakers/zhudongyu.jpeg">
+              <h4>朱东宇</h4>
+              <p>
+                <span>信天鸿科技高级研发</span>
+              </p>
+            </div>
+            <div class="media">
+              <img src="./assets/speakers/zhangfuxin.png">
+              <h4>张付新</h4>
+              <p>
+                <span>泰凡科技高级研发</span>
+              </p>
+            </div>
+            <div class="media">
+              <img src="./assets/speakers/huangzhihao.jpeg">
+              <h4>黄治豪</h4>
+              <p>
+                <span>网易游戏前端工程师</span>
+              </p>
+            </div>
+            <div class="media">
+              <img src="./assets/speakers/xuyuanchao.png">
+              <h4>徐远朝</h4>
+              <p>
+                <span>腾讯高级 UI 工程师</span>
+              </p>
+            </div>
+            <div class="media">
+              <img src="./assets/speakers/xiezhihong.png">
+              <h4>谢梓洪</h4>
+              <p>
+                <span>腾讯空间H5游戏前端工程师</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="schedule" id="section_7">
+    <div class="container">
+      <h2>大会日程与报名通道</h2>
+      <h4 class="timeline">
+        <div>
+          <span class="active">成都</span>
+          <span>深圳</span>
+          <span>上海</span>
+          <span>北京</span>
+          <span>武汉</span>
+          <span>杭州</span>
+          <span>广州</span>
+          <span>重庆</span>
+          <span>郑州</span>
+          <span>济南</span>
+          <span>天津</span>
+          <span>西安</span>
+        </div>
+      </h4>
+      <div class="table_box">
+        <a target="_blank" style="margin-top: 20px; display: block;" href="">报名通道即将开启</a>
+        <table data-city="成都">
+          <thead>
+            <tr>
+              <th>时间</th>
+              <th>主题</th>
+              <th>演讲嘉宾</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>09:00 - 09:30</td>
+              <td>签到与逛“市集”</td>
+            </tr>
+            <tr>
+              <td>09:30 - 10:20</td>
+              <td>《freeCodeCamp从0到29万star》</td>
+              <td>Quincy Larson，freeCodeCamp创始人</td>
+            </tr>
+            <tr>
+              <td>10:20 - 11:10</td>
+              <td>《给Node.js插上C++的翅膀》</td>
+              <td>死月，蚂蚁金服体验技术部研发工程师</td>
+            </tr>
+            <tr>
+              <td>11:10 - 12:00</td>
+              <td>《开源项目维护》</td>
+              <td>余澈，京东凹凸实验室前端工程师</td>
+            </tr>
+            <tr>
+              <td>12:00 - 13:55</td>
+              <td>园区餐厅午餐与逛“市集”</td>
+            </tr>
+            <tr>
+              <td>13:55 - 14:00</td>
+              <td>抽奖环节</td>
+            </tr>
+              <tr>
+                <td>14:00 - 14:50</td>
+                <td>《敏捷中国史》</td>
+                <td>熊节，宝尊电商成都研发中心总经理</td>
+              </tr>
+              <tr>
+                <td>14:50 - 15:40</td>
+                <td>《高效H5动画开发方式》</td>
+                <td>郭林烁，腾讯AlloyTeam前端工程师</td>
+              </tr>
+              <tr>
+                <td>15:40 - 16:10</td>
+                <td>休息&现场交流&逛“市集”&彩蛋环节</td>
+              </tr>
+              <tr>
+                <td>16:10 - 17:00</td>
+                <td>《高可用React服务端渲染》</td>
+                <td>郭达峰，Strikingly CTO</td>
+              </tr>
+              <tr>
+                <td>17:00 - 17:50</td>
+                <td>《打造Vue组件库》</td>
+                <td>黄轶，滴滴WebApp前端架构组负责人</td>
+              </tr>
+              <tr>
+                <td>17:50 - 17:55</td>
+                <td>抽奖环节</td>
+              </tr>
+            </tr>
+          </tbody>
+        </table>
+        <table data-city="深圳">
+          <thead>
+            <!-- <tr>
+              <th>时间</th>
+              <th>主题</th>
+              <th>演讲嘉宾</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>09:00 - 09:30</td>
+              <td>签到</td>
+            </tr>
+            <tr>
+              <td>09:30 - 09:35</td>
+              <td>主持人开场+主办方致辞</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="host" id="section_8">
+    <div class="container">
+      <h2>主办方</h2>
+      <div class="partners flex_box ">
+        <div class="host_item">
+          <a target="_blank" href="https://www.freecodecamp.one">
+            <img src="./assets/freecodecamp-logo.png">
+          </a>
+          <p>freeCodeCamp是GitHub上Star第一的开源项目。自2014年在美国创立以来，因其符合人性的游戏化课程体系、开放共享的社区运营理念，迅速发展成为风靡全球的免费自学编程社区，更是引领编程新手进入IT领域的第一入口，而社区开源免费软件也帮助众多非盈利组织节省了大量的软件开发和使用成本。目前，freeCodeCamp覆盖全球160多个国家、2000多个城市，约200万开发者在平台上学习。课程涵盖前端、后端、数据可视化等几乎所有的Web开发知识，将陆续上线区块链等新课程。freeCodeCamp中国成立于2016年，我们在将英文社区的线上课程进行本地化的基础上，尤其专注于线上线下开发者社区建设、编程教育普及以及开源文化传播，积极推动技术社区与企业、高校等的合作，促进共赢的开发者生态建设。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>协办方</h2>
+      <div class="partners flex_box ">
+        <div class="partner_item ml28">
+          <a target="_blank" href="https://juejin.im/timeline">
+            <img src="./assets/logo/juejin.png">
+          </a>
+        </div>
+        <!-- <div class="partner_item"> -->
+            <!-- <img src="./assets/freecodecamp-logo.png"> -->
+            <!-- <p>freeCodeCamp</p> -->
+          </div>
+      </div>
+    </div>
+
+    <!-- <div class="container sponsor" align=center>
+      <h2>独家战略合作伙伴</h2>
+      <img src="./assets/freecodecamp-logo.png">
+    </div> -->
+
+    <div class="container sponsor">
+      <h2>赞助商</h2>
+      <div class="flex_box sm_flex_warped">
+        <div class="sponsor_item">
+          <p>铂金赞助商</p>
+          <a target="_blank" href="http://gbacenter.org/">
+            <img src="./assets/logo/gbac.png">
+          </a>
+        </div>
+        <div class="sponsor_item">
+          <p>金牌赞助商</p>
+          <a target="_blank" href="https://www.sxl.cn">
+            <img src="./assets/logo/shangxianle.png">
+          </a>
+        </div>
+      </div>
+      <div class="flex_box sm_flex_warped">
+        <div class="sponsor_item">
+          <p>银牌赞助商</p>
+          <a target="_blank" href="http://www.knowhowchain.com">
+            <img src="./assets/logo/naohailian.jpeg">
+          </a>
+        </div>
+        <div class="sponsor_item">
+          <p>银牌赞助商</p>
+          <a target="_blank" href="http://www.baozun.com">
+            <img src="./assets/logo/baozun.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container sponsor">
+      <h2>合作伙伴 (持续更新)</h2>
+      <div class="flex_box sm_flex_warped progress">
+        <a target="_blank" href="https://segmentfault.com">
+          <img src="./assets/logo/sf.png">
+        </a>
+        <a target="_blank" href="https://www.oschina.net">
+          <img src="./assets/logo/osc.jpg">
+        </a>
+        <a target="_blank" href="http://www.easemob.com/">
+          <img src="./assets/logo/huanxin.png">
+        </a>
+        <a target="_blank" href="">
+          <img src="./assets/logo/quancheng.png">
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div>联系我们：business@freecodecamp.one</div>
+  </footer>
+  <!-- <div class="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <ul>
+        <li>
+          <span>Q1: 我想了解一下大会地点</span>
+          <p>卓美亚喜玛拉雅屹立于上海浦东，由曾主持设计西班牙巴塞罗那体育馆和洛杉矶现代美术馆的国际着名建筑大师矶崎新先生设计。酒店开业时间2011年4月，楼高21层，客房总数393间（套）。</p>
+        </li>
+        <li>
+          <span>Q2: 从机场或火车站如何去上海卓美亚喜马拉雅酒店？</span>
+          <p>【上海虹桥机场（一号航/二号航站楼）/上海浦东国际机场-酒店】乘地铁2号线至龙阳路，转7号线至花木路，3号口出站即到酒店。 </p>
+          <p>【上海火车站-酒店】乘地铁1号线至人民广场，转2号线至龙阳路，转7号线至花木路，3号口出站即到酒店。 </p>
+          <p>【虹桥火车站-酒店】乘地铁2号线至龙阳路，转7号线至花木路，3号口出站即到酒店。 </p>
+        </li>
+        <li>
+          <span>Q3: 我英语水平欠佳，会议期间会提供翻译设备吗？</span>
+          <p>期间我们会准备数量充足的同传设备，保证信息传递和交流的通畅；届时您只需要凭借身份证就可以到场免费换取同传设备。</p>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="./assets/js/nav.min.js"></script>
+  <script>
+  var c=$(window).height();$(window,document).scroll(function(){var o=$(this).scrollTop();$(".container").each(function(){var t=$(this).offset().top;t-o<=c&&$(this).addClass("animated")})});$(function(){$('.timeline span').click(function(){var i=$(this).index();$('.timeline span').removeClass('active');$(this).addClass('active');$('table').hide();$('table').eq(i).show()})})
+  $(function(){$('#nav').onePageNav();});
+  </script>
+</body>
+</html>
