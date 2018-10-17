@@ -69,16 +69,25 @@
     .partner_item{width: 45%;text-align: center;}
     .partner_item img{width:130px;}
     .host_item img{width: 220px;}
-    .sponsor_item img{width:54%;}
     .ml28{margin-left: 28%;}
     .sponsor .flex_box{-webkit-justify-content:space-around;}
     .sponsor .sponsor_item{width:20%;text-align:center;font-size:18px;}
-    .sponsor_item img{margin-top: 15px;padding-bottom:30px;}
+    .sponsor_item img{width:54%;margin-top: 15px;padding-bottom:30px;}
     .partner_item p,.host_item p{margin-top: 30px;line-height:1.6rem;}
     .host_item p,.abstract p{text-align:left;}
     .progress{-webkit-align-items: center;-webkit-flex-wrap: wrap}
     .progress a{display: block;width: 20%;padding:0 15px;box-sizing:border-box;}
     .progress img{max-width:90%;padding-bottom:30px;}
+    .progress a:hover,
+    .host_item img:hover,
+    .partner_item img:hover,
+    .sponsor_item img:hover,
+    .lg_wraped .media img:hover{
+      -webkit-animation:progress_a .3s forwards
+    }
+    @-webkit-keyframes progress_a{
+      100%{-webkit-transform:scale(1.03)}
+    }
     .progress.flex_box{-webkit-justify-content: flex-start}
     /* .faq ul{list-style:none;padding-left: 0;}
     .faq li{margin:25px 0;line-height:1.6rem;}
@@ -574,6 +583,9 @@
         </a>
         <a href="javascript:;" target="_blank">
           <img src="./assets/logo/wenna.png">
+        </a>
+        <a href="http://flink-china.org" target="_blank">
+          <img src="./assets/logo/flink-china.png">
         </a>
       </div>
     </div>
