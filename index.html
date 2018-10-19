@@ -646,7 +646,7 @@
   <script src="https://conf.freecodecamp.one/assets/js/nav.min.js"></script>
   <script>
   var c=$(window).height();$(window,document).scroll(function(){var o=$(this).scrollTop();$(".container").each(function(){var t=$(this).offset().top;t-o<=c&&$(this).addClass("animated")})});$(function(){$('.timeline span').click(function(){var i=$(this).index();$('.timeline span').removeClass('active');$(this).addClass('active');$('.table_box').hide();$('.table_box').eq(i).show()})})
-  $(function(){$("img:not(.init)").lazyload();$('#nav').onePageNav();$('.nav_toggle').click(function(){$('.nav_bar').fadeToggle()})});
+  $(function(){$("img:not(.init)").lazyload({threshold:150});$('#nav').onePageNav();$('.nav_toggle').click(function(){$('.nav_bar').fadeToggle()})});
   </script>
 </body>
 </html>
