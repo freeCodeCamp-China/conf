@@ -50,8 +50,9 @@
     .table_box:first-child{display: block;}
     .table_box,.timeline{margin-top: 0;width:100%;overflow-x:auto;margin-bottom:0;}
     .table_box a{color:#1890ff;font-weight:400;font-size:14px;display: block;margin-top:20px;}
-    .timeline{height:35px;-webkit-overflow-scrolling:touch;}
+    .timeline{height:35px;-webkit-overflow-scrolling:touch;color: #565656;}
     .timeline .active{border-color:#029950;}
+    .timeline .open{color: #333}
     .timeline div{min-width:910px;position:relative;}
     .timeline > div:after{content:'';width:100%;display:block;background:#e6e6e6;position:absolute;bottom:-10px;height:2px;}
     .timeline span{cursor:pointer;font-size:15px;padding:5px 20px 10px;position:relative;z-index:3;border-bottom:2px solid transparent;}
@@ -346,7 +347,8 @@
       <h2>大会日程与报名通道</h2>
       <h4 class="timeline">
         <div>
-          <span class="active">成都</span>
+          <span class="active open">成都</span>
+          <span class="open">天津</span>
           <span>深圳</span>
           <span>上海</span>
           <span>北京</span>
@@ -356,7 +358,6 @@
           <span>重庆</span>
           <span>郑州</span>
           <span>济南</span>
-          <span>天津</span>
           <span>西安</span>
         </div>
       </h4>
@@ -431,11 +432,73 @@
               </tbody>
             </table>
           </div>
+          <div class="table_box" data-city="天津">
+            <a target="_blank" href="http://www.huodongxing.com/event/8456879034700?from=singlemessage&isappinstalled=0">点此报名</a>
+            <table>
+              <thead>
+                <tr>
+                  <th>时间</th>
+                  <th>主题</th>
+                  <th>演讲嘉宾</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12:30 - 13:00</td>
+                  <td>入场</td>
+                </tr>
+                <tr>
+                  <td>13:00 - 13:10</td>
+                  <td>会议开场介绍</td>
+
+                </tr>
+                <tr>
+                  <td>13:10 - 14:00</td>
+                  <td>《前端工程师的格局》</td>
+                  <td>尚春，TubiTV 技术总监，中国团队负责人</td>
+                </tr>
+                <tr>
+                  <td>14:00 - 14:30</td>
+                  <td>《多租户Saas平台web实践》</td>
+                  <td>朱东宇，信天鸿科技有限公司高级研发</td>
+                </tr>
+                  <tr>
+                    <td>14:30 - 15:10</td>
+                    <td>《Vue.js中的DOM和性能优化》</td>
+                    <td>李志刚，TalkingData工程师</td>
+                  </tr>
+                  <tr>
+                    <td>15:10 - 15:30</td>
+                    <td>合影、休息（茶歇）</td>
+                  </tr>
+                  <tr>
+                    <td>15:30 - 16:20</td>
+                    <td>《工程能力原子化的探索与实践》</td>
+                    <td>彭瑞，美团高级前端工程师</td>
+                  </tr>
+                  <tr>
+                    <td>16:20 - 16:50 </td>
+                    <td>《数据可视化实践》</td>
+                    <td>张付新，泰凡科技高级研发</td>
+                  </tr>
+                  <tr>
+                    <td>16:50 - 17:30</td>
+                    <td>《前端代码尺寸精简》</td>
+                    <td>徐健，瓜子二手车前端工程师</td>
+                  </tr>
+                  <tr>
+                    <td>17:30 - 18:00</td>
+                    <td>自由讨论、退场、领取礼品</td>
+                  </tr>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div class="table_box" data-city="深圳">
             <a href="javascript:;">报名通道即将开启</a>
             <table>
-              <thead>
-                <!-- <tr>
+              <!-- <thead>
+                <tr>
                   <th>时间</th>
                   <th>主题</th>
                   <th>演讲嘉宾</th>
@@ -449,8 +512,8 @@
                 <tr>
                   <td>09:30 - 09:35</td>
                   <td>主持人开场+主办方致辞</td>
-                </tr> -->
-              </tbody>
+                </tr>
+              </tbody> -->
             </table>
           </div>
           <div class="table_box" data-city="上海">
@@ -482,10 +545,6 @@
             <table></table>
           </div>
           <div class="table_box" data-city="济南">
-            <a href="javascript:;">报名通道即将开启</a>
-            <table></table>
-          </div>
-          <div class="table_box" data-city="天津">
             <a href="javascript:;">报名通道即将开启</a>
             <table></table>
           </div>
