@@ -90,10 +90,7 @@
       100%{-webkit-transform:scale(1.03)}
     }
     .progress.flex_box{-webkit-justify-content: flex-start}
-    /* .faq ul{list-style:none;padding-left: 0;}
-    .faq li{margin:25px 0;line-height:1.6rem;}
-    .faq li span{display: block;margin-bottom: 5px;}
-    .faq li p:before{content:'- ';} */
+    .sm_hide{display: block;}
     footer{background:#eee;color:#777;font-size:13px;margin-top:30px;padding:20px 0;text-align:center;}
     @media screen and (max-width:620px){
       h2{padding-top:34px;}
@@ -123,7 +120,7 @@
       .sm_flex_warped{-webkit-flex-wrap:wrap}
       .sponsor .sponsor_item{width: 50%;}
       .sponsor_item img{width:60%;}
-      .sm_hide{display: none;}
+      .sm_hide{display: block;}
       .progress a{width:50%;text-align:center;}
     }
   </style>
@@ -350,209 +347,333 @@
         <div>
           <span class="active open">成都</span>
           <span class="open">天津</span>
-          <span>深圳</span>
-          <span>上海</span>
-          <span>北京</span>
-          <span>武汉</span>
-          <span>杭州</span>
-          <span>广州</span>
+          <span class="open">深圳</span>
+          <span class="open">广州</span>
+          <span class="open">杭州</span>
+          <span class="open">上海</span>
+          <span class="open">北京</span>
+          <span class="open">郑州</span>
           <span>重庆</span>
-          <span>郑州</span>
+          <span>武汉</span>
           <span>济南</span>
           <span>西安</span>
         </div>
       </h4>
       <div>
         <div class="table_box" data-city="成都">
-            <a target="_blank" href="https://web-conf.tk/2018/">点此报名</a>
-            <table>
-              <thead>
+          <a target="_blank" href="https://web-conf.tk/2018/">点此报名</a>
+          <table>
+            <thead>
+              <tr>
+                <th>时间</th>
+                <th>主题</th>
+                <th>演讲嘉宾</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>09:00 - 09:30</td>
+                <td>签到与逛“市集”</td>
+              </tr>
+              <tr>
+                <td>09:30 - 10:20</td>
+                <td>《freeCodeCamp 从 0 到 29 万 Star》</td>
+                <td>Quincy Larson，freeCodeCamp 创始人</td>
+              </tr>
+              <tr>
+                <td>10:20 - 11:10</td>
+                <td>《给 Node.js 插上 C++ 的翅膀》</td>
+                <td>死月，蚂蚁金服体验技术部研发工程师</td>
+              </tr>
+              <tr>
+                <td>11:10 - 12:00</td>
+                <td>《开源项目维护》</td>
+                <td>余澈，京东凹凸实验室前端工程师</td>
+              </tr>
+              <tr>
+                <td>12:00 - 13:55</td>
+                <td>园区餐厅午餐与逛“市集”</td>
+              </tr>
+              <tr>
+                <td>13:55 - 14:00</td>
+                <td>抽奖环节</td>
+              </tr>
                 <tr>
-                  <th>时间</th>
-                  <th>主题</th>
-                  <th>演讲嘉宾</th>
+                  <td>14:00 - 14:50</td>
+                  <td>《敏捷中国史》</td>
+                  <td>熊节，宝尊电商成都研发中心总经理</td>
                 </tr>
-              </thead>
-              <tbody>
                 <tr>
-                  <td>09:00 - 09:30</td>
-                  <td>签到与逛“市集”</td>
+                  <td>14:50 - 15:40</td>
+                  <td>《高效 H5 动画开发方式》</td>
+                  <td>郭林烁，腾讯 AlloyTeam 前端工程师</td>
                 </tr>
                 <tr>
-                  <td>09:30 - 10:20</td>
-                  <td>《freeCodeCamp 从 0 到 29 万 Star》</td>
-                  <td>Quincy Larson，freeCodeCamp 创始人</td>
+                  <td>15:40 - 16:10</td>
+                  <td>休息&现场交流&逛“市集”&彩蛋环节</td>
                 </tr>
                 <tr>
-                  <td>10:20 - 11:10</td>
-                  <td>《给 Node.js 插上 C++ 的翅膀》</td>
-                  <td>死月，蚂蚁金服体验技术部研发工程师</td>
+                  <td>16:10 - 17:00</td>
+                  <td>《高可用 React 服务端渲染》</td>
+                  <td>郭达峰，Strikingly CTO</td>
                 </tr>
                 <tr>
-                  <td>11:10 - 12:00</td>
-                  <td>《开源项目维护》</td>
-                  <td>余澈，京东凹凸实验室前端工程师</td>
+                  <td>17:00 - 17:50</td>
+                  <td>《打造 Vue 组件库》</td>
+                  <td>黄轶，前滴滴 WebApp 前端架构组负责人</td>
                 </tr>
                 <tr>
-                  <td>12:00 - 13:55</td>
-                  <td>园区餐厅午餐与逛“市集”</td>
-                </tr>
-                <tr>
-                  <td>13:55 - 14:00</td>
+                  <td>17:50 - 17:55</td>
                   <td>抽奖环节</td>
                 </tr>
-                  <tr>
-                    <td>14:00 - 14:50</td>
-                    <td>《敏捷中国史》</td>
-                    <td>熊节，宝尊电商成都研发中心总经理</td>
-                  </tr>
-                  <tr>
-                    <td>14:50 - 15:40</td>
-                    <td>《高效 H5 动画开发方式》</td>
-                    <td>郭林烁，腾讯 AlloyTeam 前端工程师</td>
-                  </tr>
-                  <tr>
-                    <td>15:40 - 16:10</td>
-                    <td>休息&现场交流&逛“市集”&彩蛋环节</td>
-                  </tr>
-                  <tr>
-                    <td>16:10 - 17:00</td>
-                    <td>《高可用 React 服务端渲染》</td>
-                    <td>郭达峰，Strikingly CTO</td>
-                  </tr>
-                  <tr>
-                    <td>17:00 - 17:50</td>
-                    <td>《打造 Vue 组件库》</td>
-                    <td>黄轶，前滴滴 WebApp 前端架构组负责人</td>
-                  </tr>
-                  <tr>
-                    <td>17:50 - 17:55</td>
-                    <td>抽奖环节</td>
-                  </tr>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="table_box" data-city="天津">
-            <a target="_blank" href="http://www.huodongxing.com/event/8456879034700?from=singlemessage&isappinstalled=0">点此报名</a>
-            <table>
-              <thead>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table_box" data-city="天津">
+          <a target="_blank" href="http://www.huodongxing.com/event/8456879034700?from=singlemessage&isappinstalled=0">点此报名</a>
+          <table>
+            <thead>
+              <tr>
+                <th>时间</th>
+                <th>主题</th>
+                <th>演讲嘉宾</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12:30 - 13:00</td>
+                <td>入场</td>
+              </tr>
+              <tr>
+                <td>13:00 - 13:10</td>
+                <td>会议开场介绍</td>
+              </tr>
+              <tr>
+                <td>13:10 - 14:00</td>
+                <td>《前端工程师的格局》</td>
+                <td>尚春，TubiTV 技术总监，中国团队负责人</td>
+              </tr>
+              <tr>
+                <td>14:00 - 14:30</td>
+                <td>《多租户Saas平台web实践》</td>
+                <td>朱东宇，信天鸿科技有限公司高级研发</td>
+              </tr>
                 <tr>
-                  <th>时间</th>
-                  <th>主题</th>
-                  <th>演讲嘉宾</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>12:30 - 13:00</td>
-                  <td>入场</td>
+                  <td>14:30 - 15:10</td>
+                  <td>《Vue.js中的DOM和性能优化》</td>
+                  <td>李志刚，TalkingData工程师</td>
                 </tr>
                 <tr>
-                  <td>13:00 - 13:10</td>
-                  <td>会议开场介绍</td>
-
+                  <td>15:10 - 15:30</td>
+                  <td>合影、休息（茶歇）</td>
                 </tr>
                 <tr>
-                  <td>13:10 - 14:00</td>
-                  <td>《前端工程师的格局》</td>
-                  <td>尚春，TubiTV 技术总监，中国团队负责人</td>
+                  <td>15:30 - 16:20</td>
+                  <td>《工程能力原子化的探索与实践》</td>
+                  <td>彭瑞，美团高级前端工程师</td>
                 </tr>
                 <tr>
-                  <td>14:00 - 14:30</td>
-                  <td>《多租户Saas平台web实践》</td>
-                  <td>朱东宇，信天鸿科技有限公司高级研发</td>
-                </tr>
-                  <tr>
-                    <td>14:30 - 15:10</td>
-                    <td>《Vue.js中的DOM和性能优化》</td>
-                    <td>李志刚，TalkingData工程师</td>
-                  </tr>
-                  <tr>
-                    <td>15:10 - 15:30</td>
-                    <td>合影、休息（茶歇）</td>
-                  </tr>
-                  <tr>
-                    <td>15:30 - 16:20</td>
-                    <td>《工程能力原子化的探索与实践》</td>
-                    <td>彭瑞，美团高级前端工程师</td>
-                  </tr>
-                  <tr>
-                    <td>16:20 - 16:50 </td>
-                    <td>《数据可视化实践》</td>
-                    <td>张付新，泰凡科技高级研发</td>
-                  </tr>
-                  <tr>
-                    <td>16:50 - 17:30</td>
-                    <td>《前端代码尺寸精简》</td>
-                    <td>徐健，瓜子二手车前端工程师</td>
-                  </tr>
-                  <tr>
-                    <td>17:30 - 18:00</td>
-                    <td>自由讨论、退场、领取礼品</td>
-                  </tr>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="table_box" data-city="深圳">
-            <a href="javascript:;">报名通道即将开启</a>
-            <table>
-              <!-- <thead>
-                <tr>
-                  <th>时间</th>
-                  <th>主题</th>
-                  <th>演讲嘉宾</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>09:00 - 09:30</td>
-                  <td>签到</td>
+                  <td>16:20 - 16:50 </td>
+                  <td>《数据可视化实践》</td>
+                  <td>张付新，泰凡科技高级研发</td>
                 </tr>
                 <tr>
-                  <td>09:30 - 09:35</td>
-                  <td>主持人开场+主办方致辞</td>
+                  <td>16:50 - 17:30</td>
+                  <td>《前端代码尺寸精简》</td>
+                  <td>徐健，瓜子二手车前端工程师</td>
                 </tr>
-              </tbody> -->
-            </table>
-          </div>
-          <div class="table_box" data-city="上海">
-            <a href="javascript:;">报名通道即将开启</a>
-            <table></table>
-          </div>
-          <div class="table_box" data-city="北京">
-            <a href="javascript:;">报名通道即将开启</a>
-            <table></table>
-          </div>
-          <div class="table_box" data-city="武汉">
-            <a href="javascript:;">报名通道即将开启</a>
-            <table></table>
-          </div>
-          <div class="table_box" data-city="杭州">
-            <a href="javascript:;">报名通道即将开启</a>
-            <table></table>
-          </div>
-          <div class="table_box" data-city="广州">
-            <a href="javascript:;">报名通道即将开启</a>
-            <table></table>
-          </div>
-          <div class="table_box" data-city="重庆">
-            <a href="javascript:;">报名通道即将开启</a>
-            <table></table>
-          </div>
-          <div class="table_box" data-city="郑州">
-            <a href="javascript:;">报名通道即将开启</a>
-            <table></table>
-          </div>
-          <div class="table_box" data-city="济南">
-            <a href="javascript:;">报名通道即将开启</a>
-            <table></table>
-          </div>
-          <div class="table_box" data-city="西安">
-            <a href="javascript:;">报名通道即将开启</a>
-            <table></table>
-          </div>
+                <tr>
+                  <td>17:30 - 18:00</td>
+                  <td>自由讨论、退场、领取礼品</td>
+                </tr>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table_box" data-city="深圳">
+          <a href="http://www.huodongxing.com/event/6462473567300" target="_blank">点此报名</a>
+          <table>
+            <thead>
+              <tr>
+                <th>时间</th>
+                <th>主题</th>
+                <th>演讲嘉宾</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>14:00 - 14:30</td>
+                <td>签到</td>
+              </tr>
+              <tr>
+                <td>14:30 - 15:15</td>
+                <td>《Tencent Server Web 详解》</td>
+                <td>谢梓洪</td>
+              </tr>
+              <tr>
+                <td>15:15 - 15:20</td>
+                <td>提问环节</td>
+              </tr>
+              <tr>
+                <td>15:20 - 16:05</td>
+                <td>《关于区块链技术你应该了解的》</td>
+                <td>谢宏中</td>
+              </tr>
+              <tr>
+                <td>16:05 - 16:10</td>
+                <td>提问环节</td>
+              </tr>
+              <tr>
+                <td>16:10 - 16:55</td>
+                <td>《CSS GRIDS 终极探秘》</td>
+                <td>徐远朝</td>
+              </tr>
+              <tr>
+                <td>16:55 - 17:00</td>
+                <td>提问环节</td>
+              </tr>
+              <tr>
+                <td>17:00 - 17:45</td>
+                <td>《React Native 开发实践》</td>
+                <td>黄治豪</td>
+              </tr>
+              <tr>
+                <td>17:45 - 18:00</td>
+                <td>提问及合影</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table_box" data-city="上海">
+          <a href="http://www.huodongxing.com/event/5462486665000" target="_blank">点此报名</a>
+          <table></table>
+        </div>
+        <div class="table_box" data-city="北京">
+          <a href="http://www.huodongxing.com/event/6462586979400" target="_blank">点此报名</a>
+          <table></table>
+        </div>
+        <div class="table_box" data-city="杭州">
+          <a href="http://www.huodongxing.com/event/4462597580400" target="_blank">点此报名</a>
+          <table>
+            <thead>
+              <tr>
+                <th>时间</th>
+                <th>主题</th>
+                <th>演讲嘉宾</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>13：00 - 13：30</td>
+                <td>活动签到</td>
+              </tr>
+              <tr>
+                <td>13：30 - 14：15</td>
+                <td>《如何基于 graphene 开发智能合约》</td>
+                <td>朱礼廷，公信宝区块链架构师</td>
+              </tr>
+              <tr>
+                <td>14：15 - 14：20</td>
+                <td>问答环节</td>
+              </tr>
+              <tr>
+                <td>14：20 - 15：05</td>
+                <td>《基于 VUE SSR 的前后端同构解决方案》</td>
+                <td>楼云龙，微医前端运营支撑团队负责人</td>
+              </tr>
+              <tr>
+                <td>15：05 - 15：10</td>
+                <td>问答环节</td>
+              </tr>
+              <tr>
+                <td>15：10 - 15：20</td>
+                <td>休息时间</td>
+              </tr>
+              <tr>
+                <td colspan="3">...</td>
+              </tr>
+              <tr>
+                <td>17：10 - 17：30</td>
+                <td>合照留念</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table_box" data-city="广州">
+          <a href="http://www.huodongxing.com/event/2463195011800" target="_blank">点此报名</a>
+          <table>
+            <thead>
+              <tr>
+                <th>时间</th>
+                <th>主题</th>
+                <th>演讲嘉宾</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>13:30 - 13:45</td>
+                <td>入场签到</td>
+              </tr>
+              <tr>
+                <td>13:45 - 14:10</td>
+                <td>交流环节</td>
+              </tr>
+              <tr>
+                <td>14:10 - 15:10</td>
+                <td>兔纸的技术分享环节</td>
+              </tr>
+              <tr>
+                <td>15:10 - 15:25</td>
+                <td>兔纸的Q&A时间</td>
+              </tr>
+              <tr>
+                <td>15:25 - 15:30</td>
+                <td>休息时间</td>
+              </tr>
+              <tr>
+                <td>15:30 - 16:15</td>
+                <td>第一轮Code Retreat</td>
+              </tr>
+              <tr>
+                <td>16:15 - 16:30</td>
+                <td>分享交流</td>
+              </tr>
+              <tr>
+                <td>16:30 - 17:15</td>
+                <td>第二轮CodeRetreat</td>
+              </tr>
+              <tr>
+                <td>17:15 - 17:30</td>
+                <td>分享交流</td>
+              </tr>
+              <tr>
+                <td>17:30 - </td>
+                <td>拍照留念，建立活动群，有兴趣的人可以一起约个饭交流心得。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table_box" data-city="郑州">
+          <a href="http://www.huodongxing.com/event/8463765479100" target="_blank">点此报名</a>
+          <table></table>
+        </div>
+        <div class="table_box" data-city="济南">
+          <a href="javascript:;">报名通道即将开启</a>
+          <table></table>
+        </div>
+        <div class="table_box" data-city="重庆">
+          <a href="javascript:;">报名通道即将开启</a>
+          <table></table>
+        </div>
+        <div class="table_box" data-city="武汉">
+          <a href="javascript:;">报名通道即将开启</a>
+          <table></table>
+        </div>
+        <div class="table_box" data-city="西安">
+          <a href="javascript:;">报名通道即将开启</a>
+          <table></table>
+        </div>
       </div>
     </div>
   </div>
@@ -593,7 +714,6 @@
     <div class="container sponsor">
       <h2>赞助商（持续更新）</h2>
       <div class="flex_box sm_flex_warped">
-        <div class="sponsor_item sm_hide"></div>
         <div class="sponsor_item">
           <p>铂金赞助商</p>
           <a target="_blank" href="http://gbacenter.org/">
@@ -606,10 +726,15 @@
             <img src="https://conf.freecodecamp.one/assets/logo/shangxianle.png">
           </a>
         </div>
+        <div class="sponsor_item">
+          <p>金牌赞助商</p>
+          <a href="http://hpb.io" target="_blank">
+            <img src="./assets/logo/highpb.png">
+          </a>
+        </div>
         <div class="sponsor_item sm_hide"></div>
       </div>
       <div class="flex_box sm_flex_warped">
-        <div class="sponsor_item sm_hide"></div>
         <div class="sponsor_item">
           <p>银牌赞助商</p>
           <a target="_blank" href="http://www.knowhowchain.com">
@@ -622,17 +747,12 @@
             <img src="https://conf.freecodecamp.one/assets/logo/baozun.jpg">
           </a>
         </div>
-        <div class="sponsor_item sm_hide"></div>
-      </div>
-      <div class="flex_box sm_flex_warped">
-        <div class="sponsor_item sm_hide"></div>
         <div class="sponsor_item">
           <p>铜牌赞助商</p>
           <a target="_blank" href="https://www.huaweicloud.com">
             <img src="https://conf.freecodecamp.one/assets/logo/huawei.png">
           </a>
         </div>
-        <div class="sponsor_item"></div>
         <div class="sponsor_item sm_hide"></div>
       </div>
       <div class="flex_box sm_flex_warped">
@@ -669,8 +789,8 @@
         <a href="https://opensource.tencent.com" target="_blank">
           <img src="https://opensource.tencent.com/img/logo.png">
         </a>
-        <a href="https://m.ke.qq.com/index.html?_bid=167&_wv=4097#from=other" target="_blank">
-          <img src="https://conf.freecodecamp.one/assets/logo/tecent_ke.png">
+        <a href="http://blockgeek.org/" target="_blank">
+          <img src="./assets/logo/bgeek.png">
         </a>
         <a href="https://www.getui.com/cn/index.html" target="_blank">
           <img src="https://conf.freecodecamp.one/assets/logo/getui.png">
@@ -683,6 +803,9 @@
         </a>
         <a href="http://www.easemob.com/" target="_blank">
           <img src="https://conf.freecodecamp.one/assets/logo/huanxin.png">
+        </a>
+        <a href="https://m.ke.qq.com/index.html?_bid=167&_wv=4097#from=other" target="_blank">
+          <img src="https://conf.freecodecamp.one/assets/logo/tecent_ke.png">
         </a>
         <a href="https://www.oschina.net" target="_blank">
           <img src="https://conf.freecodecamp.one/assets/logo/osc.jpg">
@@ -714,30 +837,11 @@
   <footer>
     <div>联系我们：business@freecodecamp.one</div>
   </footer>
-  <!-- <div class="faq">
-    <div class="container">
-      <h2>FAQ</h2>
-      <ul>
-        <li>
-          <span>Q1: 我想了解一下大会地点</span>
-          <p></p>
-        </li>
-        <li>
-          <span>Q2: 从机场或火车站如何去？</span>
-          <p> </p>
-        </li>
-        <li>
-          <span>Q3: 我英语水平欠佳，会议期间会提供翻译设备吗？</span>
-          <p></p>
-        </li>
-      </ul>
-    </div>
-  </div> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
   <script src="https://conf.freecodecamp.one/assets/js/nav.min.js"></script>
   <script>
-  var c=$(window).height();$(window,document).scroll(function(){var o=$(this).scrollTop();$(".container").each(function(){var t=$(this).offset().top;t-o<=c&&$(this).addClass("animated")})});$(function(){$('.timeline span').click(function(){var i=$(this).index();$('.timeline span').removeClass('active');$(this).addClass('active');$('.table_box').hide();$('.table_box').eq(i).show()})})
+  var c=$(window).height();$(window,document).scroll(function(){var o=$(this).scrollTop();$(".container").each(function(){var t=$(this).offset().top;t-o<=c&&$(this).addClass("animated")})});$(function(){$('.timeline span').click(function(){var text=$(this).text();$('.timeline span').removeClass('active');$(this).addClass('active');$('.table_box').hide();$('.table_box').each(function(){if($(this).data('city')===text){$(this).show()}})})})
   $(function(){$('#nav').onePageNav();$('.nav_toggle').click(function(){$('.nav_bar').fadeToggle()})});
   </script>
 </body>
